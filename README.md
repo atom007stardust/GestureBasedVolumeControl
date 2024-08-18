@@ -17,32 +17,12 @@ This project allows users to control the system volume using hand gestures. The 
 - MediaPipe
 - PyAutoGUI
 
-## Installation
+## Installation of packages
 
-1. Clone this repository:
-    ```bash
-    git clone https://github.com/atom007stardust/FingerVolumeControl.git
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd FingerVolumeControl
-    ```
-
-3. Install the required packages:
+ Install the required packages:
     ```bash
     pip install opencv-python mediapipe pyautogui
     ```
-
-## Usage
-
-1. Connect a webcam to your computer.
-2. Run the script:
-    ```bash
-    python volume_control.py
-    ```
-
-3. Adjust the distance between your thumb and index finger to increase or decrease the system volume.
 
 ## Code Explanation
 
