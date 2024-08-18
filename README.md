@@ -20,7 +20,7 @@ This project allows users to control the system volume using hand gestures. The 
 ## Installation of packages
 
  Install the required packages:
-    ```bash
+    ```
     pip install opencv-python mediapipe pyautogui
     ```
 
