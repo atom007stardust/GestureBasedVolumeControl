@@ -5,6 +5,13 @@
 
 This project allows users to control the system volume using hand gestures. The application leverages the MediaPipe library for hand tracking and OpenCV for image processing. By measuring the distance between the thumb and index finger, the program adjusts the system volume accordingly.
 
+##Hand Landmarks
+The Mediapipe hand tracking model detects 21 hand landmarks, each representing a unique point on the hand. Here are some key landmarks used in this code:
+
+4: Thumb tip
+8: Index finger tip
+This project draws a line between these two landmarks to measure the distance between the thumb and index finger, adjusting the volume based on this distance.
+
 ## Features
 
 - Hand gesture tracking with MediaPipe.
