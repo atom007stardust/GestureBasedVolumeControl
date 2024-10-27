@@ -1,11 +1,12 @@
 # GestureBasedVolumeControl
  This Python app uses MediaPipe and OpenCV to track hand gestures and adjust system volume via PyAutoGUI. It measures the thumb-index finger distance to increase or decrease volume, offering a hands-free way to control sound levels.
 
-## Overview
+## Code Overview
+Mediapipe Hand Tracking: Mediapipe's Hands model detects hands and landmarks in real-time.
+Landmark Detection: Key landmarks (thumb and index finger tips) are tracked and used for volume control.
+Volume Control: Uses pyautogui to send volumeup and volumedown commands based on the distance between landmarks.
 
-This project allows users to control the system volume using hand gestures. The application leverages the MediaPipe library for hand tracking and OpenCV for image processing. By measuring the distance between the thumb and index finger, the program adjusts the system volume accordingly.
-
-##Hand Landmarks
+## Hand Landmarks
 The Mediapipe hand tracking model detects 21 hand landmarks, each representing a unique point on the hand. Here are some key landmarks used in this code:
 
 4: Thumb tip
@@ -36,14 +37,8 @@ This project draws a line between these two landmarks to measure the distance be
 - **MediaPipe**: Used for detecting and tracking hand landmarks.
 - **OpenCV**: Used for image processing and drawing.
 - **PyAutoGUI**: Used for simulating volume up and down key presses.
-
-## Contributing
-
-Feel free to open issues or submit pull requests if you have suggestions for improvements or fixes.
-
-## Acknowledgements
-
-- MediaPipe for hand tracking capabilities.
-- OpenCV for image processing.
-- PyAutoGUI for simulating keyboard inputs.
+- 
+## Controls
+Move the index finger tip (Landmark 8) and thumb tip (Landmark 4) close together to decrease the volume.
+Increase the distance between these two points to increase the volume.
 
